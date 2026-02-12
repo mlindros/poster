@@ -1,0 +1,117 @@
+/* Performance Views Styles ---------------------------------------*/
+
+.tablecontent {
+    background: #DDDDDD;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    position:absolute; top: 10px; bottom: 10px; left: 200px; right:10px;
+    box-shadow: 0 3px 8px 1px black;
+    font-weight:bold;
+}
+
+/* begin table stuff */
+.generictablewrapper1 {
+	position:absolute;
+    top: 120px;
+    left: 10px;
+    bottom: 10px;
+    width: 47%;
+    position: absolute;
+    color: #000000;
+    border: 3px solid black;
+}
+
+.generictablewrapper2 {
+	position:absolute;
+    top: 120px;
+    right: 10px;
+    bottom: 10px;
+    width: 47%;
+    position: absolute;
+    color: #000000;
+    border: 3px solid black;
+}
+
+.generictable1,
+.generictable2 {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.generictable1,
+.generictable1 td, .genericthead1 th,
+.generictable2,
+.generictable2 td, .genericthead2 th {
+    border: 1px solid black;
+}
+
+.genericthead1 th, .genericthead2 th {
+    border-bottom: 3px solid black;
+}
+
+.genericthead1, .genericthead2 {
+    font: bold arial;
+    
+}
+
+.generictbody1, .generictbody2 {
+    background: #ffffff;
+}
+
+.tabletitle {
+    background: #994444;
+    position:absolute; left: 0px; right: 0px; top: 0px; 
+    
+height: 110px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+}
+
+.tabletitleleft {
+    float:left;
+}
+
+.tabletitleright {
+    float:right;
+font-weight:bold;
+}
+
+.odd {
+    background-color: #f0f8ff;
+}
+
+tbody.generictbody1 span {
+    color:#000;
+    text-decoration:none;
+}
+
+td a.dbaperf:hover,
+tbody.dbaperf td:hover,
+td a.dbaperf.current,
+td.current {
+    color:#A31919;
+    background-color: #eeeeee;
+    text-decoration:none;
+    width: 100%;
+    height: 100%;
+}
+
+td a.dbaperf {
+    display: block;
+}
+

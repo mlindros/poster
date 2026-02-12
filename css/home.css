@@ -1,0 +1,200 @@
+/*Home Page CSS */
+
+.tab_home {
+	background-image: url('../img/grey-background.png');
+    background-size: 100% 100%;
+}
+
+#homelinks {
+	position: relative;
+	overflow-y: hidden;
+	width: 100%;
+}
+.homedesc {
+	overflow:hidden;
+    padding: 0 0 0 0;
+	white-space: nowrap;
+}
+
+.homedesc li {
+	white-space: normal;
+	border-bottom-width: 0;
+	display: inline-block;
+	list-style: none;
+	margin: 0 0 0 0;
+	text-align: center;
+	width:194px;
+	height: 383px;
+	padding-left:20px;
+	padding-right:20px;
+	background: url(../img/red-menu-box.png);
+	vertical-align: top; /* for some reason this is needed to get inline-block to line up properly. */
+}
+
+.homedesc h2 {
+	font-family:Arial,serif;
+	font-size: 22px;
+	color:red;
+}
+
+.homedesc a {
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+.overview {
+    position: absolute; top: 30px; left: 50px; width: 60%;
+    min-width: 200px;
+    max-width: 550px;
+    color: #000;
+    text-align: left;
+    float: left;
+    font-family:Arial;
+    font-size: 18px;
+	overflow: hidden;
+}
+
+.box {
+    top: 180px;
+    left: 70px;
+    width: 40%;
+    height: 200px;
+    background: #fff;
+    margin: 40px 10px;
+    padding: 5px;
+    color: #000;
+    text-align: left;
+    float: left;
+    font-family:Arial;
+    font-size: 16px;
+	overflow: hidden;
+}
+
+.box li {
+    color: #ff0000;
+}
+
+.box li span {
+    color: #000;
+}
+
+/* Box effect */
+.boxeffect
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.boxeffect:before, .boxeffect:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.boxeffect:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.oraclelinks {
+    position: absolute; bottom: 5px; right: 30px;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    overflow-y: hidden;
+}
+
+.oraclelinks li {
+    display: inline;
+    float: left;
+    list-style: none;
+    padding: 0 2px 0 2px;
+    text-align: center;
+}
+
+/* CREDITS */
+/* Mask for background, by default is not display */
+#light-mask {
+    display: none;
+    position: fixed; left: 0; top: 0;
+    z-index: 100;
+    width: 100%; height: 100%;
+    opacity: 0.8;
+}
+
+/* The credits popup window div class */
+.home-credits {
+    display:none;
+    background: #FFF;
+    padding: 10px;
+    border: 2px solid #A31919;
+    float: left;
+    position:fixed; top: 45%; left: 50%; width:40%; height:65%;
+    z-index: 200;
+    box-shadow: 0px 0px 20px #999; /* CSS3 */
+    -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+    border-radius:7px 7px 7px 7px;
+    -moz-border-radius: 7px; /* Firefox */
+    -webkit-border-radius: 7px; /* Safari, Chrome */
+}
+
+.credits-content {
+    height:100%;
+    color: #000000;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Position the FAQ button */
+img.credits-btn_faq {
+    float: left;
+    margin: -28px 0 0 -28px;
+}
+
+/* Position the close button */
+img.credits-btn_close {
+    float: right;
+    margin: -28px -28px 0 0;
+}
+
+.credit-title {
+    color: #A31919;
+    font-family:Verdana,Arial;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.credit-desc,
+.credit-people{
+    text-align: center;
+}
+
+.credit-reg {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+

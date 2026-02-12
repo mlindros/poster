@@ -1,0 +1,134 @@
+/* Background Processes Links ---------------------------------------*/
+
+.bgcontent {
+    background: #DDDDDD;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    position:absolute; top: 10px; bottom: 10px; left: 10px; right:10px;
+	box-shadow: 0 3px 8px 1px black;
+}
+
+
+#bgprocssearchform {
+	position:absolute; left: 10px; top:80px;
+	/* awkward fix ahead - allows suggestion box to expand a bit, since this is it's parent. */
+	bottom: 0; right: 0;
+}
+
+div.bginstruction {
+	position:absolute; left: 10px; top:120px;
+}
+
+.bginstruction p {
+	color: red;
+}
+
+.bginstruction img {
+	position:relative; top: -3px; left: -40%;
+	float: right;
+}
+
+.bgcategories {
+    overflow: hidden;
+    position:absolute; top: 170px; left: 10px; width: 250px; bottom: 10px;
+    list-style: none;
+	padding-left: 0;
+}
+
+.bgcategories a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    padding:  5px;
+}
+
+.bgcategories li {
+    background: #999999;
+    color: #000000;
+    border: 1px solid;
+    margin: 3px;
+    text-align: left;
+}
+
+.bgcategories a:hover,
+.bgcategories a.current {
+    background: #ffffff;
+    border-color: purple;
+    color: #999999;
+}
+
+.bgtitle {
+    background: #994444;
+    position:absolute; left: 0px; right: 0px; top: 0px; height: 110px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+}
+
+.bgtitleleft {
+    float:left;
+}
+
+.bgtitleright {
+    float:right;
+}
+
+.bgpleft {
+    font-size: 18px;
+}
+
+.bgpright {
+    font-size: 22px;
+}
+/* begin table stuff */
+.bgtablewrapper {
+	position: absolute;
+	top: 130px;
+	left: 270px;
+	bottom: 10px;
+	right: 10px;
+}
+
+.bgtable {
+	border-collapse: collapse;
+}
+
+.bgheader {
+    border-color: #000000;
+    color: #000000;
+	margin-right: 17px;
+}
+
+.bgwindow {
+    background: #ffffff;
+    border-color: #000000;
+    color: #000000;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+.bgacronym, .bgname, .bgdesc, .bgrequired, .bgstart_by_default,
+ .bgnew_this_release_hdr, .bgnew_this_release {
+    border-color: #000000;
+    border: 1px solid;
+    font-size: 9pt;
+}
+
+.bgnew_this_release, .bgnew_this_release_hdr {
+	border-right: 0;
+}
+/* end table stuff */
+

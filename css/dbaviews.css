@@ -1,0 +1,161 @@
+/**
+*	Interactive Poster DBA Views
+*
+*	Mark Lindros, Oracle Corporation
+*
+*/
+
+/* This div is used to control where the diagram map viewport is displayed
+ * on the screen for the DBA Views interactives. Doing this allowed us to continue
+ * using the existing arrow and +/- icons and handlers without any modifications
+ */
+.dba-map-container,
+.arch-map-container,
+.dbaperf-map-container {
+    /*position:absolute; top:0%; left:16.5%; width:83%; height:98%;*/
+    position:absolute; top:5px; left:200px; bottom:10px; right:10px;
+	margin:0 0 0 0;
+}
+
+/* The ul list of DBA View Categories */
+.dbacategories,
+.archcategories,
+.dbaperfcategories {
+    overflow-y:auto;
+    overflow-x:hidden;
+    float: left;
+    position:absolute;
+    top:120px;
+    left:3px;
+    bottom:5px;
+    width:180px;
+
+    /*border:1px solid black;*/
+    list-style: none;
+    margin: 0 5px 0 0;
+    padding: 0 10px 0 0;
+    text-align: left;
+}
+
+.dbacategories a,
+.archcategories a,
+.dbaperfcategories a {
+    border-bottom-width: 0;
+    color: #fff;
+    display: block;
+    padding: 2px 0;
+    text-decoration: none;
+}
+
+.dbacategories a.current,
+.archcategories a.current,
+.dbaperfcategories a.current {
+    color:#09F;
+}
+
+.dbacategories a:hover,
+.archcategories a:hover,
+.dbaperfcategories a:hover{
+    color:#09F;
+}
+
+.acrobat {
+    position:absolute;
+    left:160px;
+    top:10px;
+    z-index: 200;
+}
+
+/* This is where the DBA View data is displayed. Modify this to change look and feel */
+.dba-hotspot-container {}
+
+.dba-hotspot-content {
+    position:absolute; top:6%; left:5%; width:86%; height:86%;
+    border:4px solid black;
+    margin: 0 0 0 0;
+    padding:0 10px 10px 10px;
+}
+
+.dbaviewtitle { color: #fff; }
+.dbaviewtitleleft { float:left; }
+.dbaviewtitleright { float:right; }
+
+.viewdesc {
+    float:left;
+    color: #fff;
+    position:absolute; top:35px;
+}
+
+.viewheader {
+    border:2px solid #00008b;
+    background-color:#f5f5f5;
+}
+
+.viewheader th {
+    border:1px solid black;
+}
+
+.viewwrapper {
+	position:absolute;
+    top: 135px;
+    left: 10px;
+    bottom: 10px;
+    right: 14px;
+    position: absolute;
+}
+
+.dba-hotspot-table {
+    border:2px solid #00008b;
+    background-color:#f5f5f5;
+}
+
+.dba-hotspot-table td {
+    border:1px solid black;
+}
+
+/*
+ * DBA VIEWS HOTSPOT POPUP WINDOW CSS
+ */
+
+/* Mask for background, by default is not display */
+#mask {
+    display: none;
+    background: #000;
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+/* The DBA Views popup window div class */
+.dba-hotspot-data {
+    display:none;
+    background: #333;
+    padding: 10px;
+    border: 2px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position:fixed;
+    top: 60px;
+    left: 200px;
+    bottom: 60px;
+    right: 200px;
+    min-width: 750px;
+    min-height: 400px;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px #999; /* CSS3 */
+    -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+    border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+/* Position the close button */
+img.btn_close {
+    float: right;
+    margin: -28px -28px 0 0;
+}
+
+
+

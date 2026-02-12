@@ -1,0 +1,54 @@
+/**
+*	Interactive Poster Search
+*
+*	Mark Lindros, Oracle Corporation
+*
+*/
+
+/* Search box CSS */
+#dbasuggestions,
+#archsuggestions,
+#dbaperfsuggestions,
+#bgprocssuggestions {
+    overflow-y:auto;
+    overflow-x: hidden;
+    border-width:2px;
+    border-color:#000;
+    border-style:solid;
+    background-color:#a0a0a0;
+    font-size:12px;
+    z-index: 9999;
+    display:none;
+    position: absolute;
+    max-height: 80%;
+    max-width: 400px;
+    padding: 10px 25px 0 10px;
+    box-shadow: 0px 0px 20px #999; /* CSS3 */
+    -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+    border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+#dbasuggestions a,
+#archsuggestions a,
+#dbaperfsuggestions a,
+#bgprocssuggestions a { display:float; clear:left; height:56px; text-decoration:none; }
+
+#dbasuggestions a:hover,
+#archsuggestions a:hover,
+#dbaperfsuggestions a:hover,
+#bgprocssuggestions a:hover { background-color:#b7b7b7; color:#ffffff; }
+
+#dbasuggestions > *:last-child,
+#archsuggestions > *:last-child,
+#dbaperfsuggestions > *:last-child,
+#bgprocssuggestions > *:last-child { margin-bottom: 10px; }
+
+.search {
+    position: absolute;
+	top: 3px;
+    left: 3px;
+    height: 80%;
+}

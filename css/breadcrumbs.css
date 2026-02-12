@@ -1,0 +1,34 @@
+/* Tabbed Links ---------------------------------------*/
+
+.diagram {
+	overflow: hidden;
+	color: #fff;
+	position:absolute; top:-10px; left:-30px; height:5%;
+	z-index: 50;
+}
+
+.diagram li {
+	border-bottom-width: 0;
+	display: inline;
+	float: left;
+	list-style: none;
+	margin: 0 5px 0 0;
+	padding: 0 0 0 0;
+	text-align: center;
+}
+
+.breadcrumbs a {
+    color:#fff8dc;
+    text-decoration:none;
+}
+
+.breadcrumbs a:hover {
+    color:#09F;
+    text-decoration:underline;
+}
+
+.subsystem {
+	color: #fff;
+	position:absolute; top:.5%; left:76%; height:5%;
+	z-index: 50;
+}

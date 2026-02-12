@@ -1,0 +1,374 @@
+/* IE fixes */
+a img {
+    border: none;
+}
+/* General page layout formatting */
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	overflow: hidden;
+	font-family:TrebuchetMS,Arial,Verdana,Sans-serif,serif;
+}
+
+#posterintro {
+    background: #FFFFFF;
+    position: fixed; left: 0; top: 0;
+    width: 100%; height: 100%;
+    opacity: 1.0;
+    z-index: 900;
+}
+
+#posterintro-inner {
+    display: block;
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    z-index: 999;
+}
+
+#posterintro-loader {
+    display: block;
+    position: absolute; top: 50%; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+}
+
+#container {
+	margin: 0 0 0 0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+#header {
+	background:#ffffff;
+	padding:0;
+	text-align:center;
+	border:1px solid #ccc;
+}
+
+#header p, #header h1 {
+	margin:0;
+	padding:5px 0 0 5px;
+}
+
+.title {
+	font-family:Arial,serif;
+	font-size: 22px;
+	color:#000000;
+}
+
+.subtitle {
+	font-family:Arial,serif;
+	font-size: 18px;
+	color: #FF0000;
+}
+
+#body {
+   	position: absolute;
+	width: 100%;
+	top: 25px;
+	bottom: 25px;
+}
+
+.backimg {
+	height:100%;
+	width:100%;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+
+.backimg2 {
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+	position:absolute; top:-38px; right:5px; width:193px; height:36px;
+}
+
+.diagram {
+	color:#fff;
+	position:absolute; top:-3.5%; left:0.5%;
+}
+
+#footer {
+	position: absolute;
+	width: 100%;
+	height: 25px;
+	bottom: 0px;
+	background:#ffffff;
+	display:block;
+}
+
+#footer p {
+	margin:0;
+	padding:0 0 5px 0;
+}
+
+.diagram-map-container {
+    /*position:absolute; top:30px; left:0; width:63%; height:92%;*/
+    /*position:absolute; top:30px; left:2px; width:63%; bottom:15px;*/
+    position:absolute; top:30px; left:2px; width:100%; bottom:15px;
+    margin:0 0 0 0;
+}
+
+/* Mapz and Hotspot CSS */
+.map-viewport {
+	position:absolute; top:0%; left:0; width:100%; height:100%;
+	border:4px solid black; overflow:hidden;
+	margin:0 0 0 0;
+}
+
+.level {
+	position:absolute;
+	left:0; top:0;
+	z-index:10;
+}
+
+.current-level {
+	z-index:20;
+}
+
+.draggable_map {
+	position:relative; left:0; top:0;
+	cursor:move;
+}
+
+.plus,
+.minus,
+.arrow {
+    background-color: #0099FF;
+    opacity: 0.35;
+    z-index:200;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.plus:hover,
+.minus:hover,
+.arrow:hover {
+    opacity: 0.85;
+}
+
+.arrow-up-wrapper {
+    position:absolute; top:0%; left:50%;
+}
+
+.arrow-up {
+    position:absolute; top:0%; left: -17px; /* left = -width/2 */
+    width:35px; height:25px;
+}
+
+.arrow-down-wrapper {
+    position:absolute; bottom:0%; left:50%;
+}
+
+.arrow-down {
+    position:absolute; bottom:0%; left: -17px; /* left = -width/2 */
+    width:35px; height:25px;
+}
+
+.arrow-left-wrapper {
+    position:absolute; top:50%; left:0%;
+}
+
+.arrow-left {
+    position:absolute; top:-17px; left:0%; /* top = -height/2 */
+    width:25px; height:35px;
+}
+
+.arrow-right-wrapper {
+    position:absolute; top:50%; right:0%;
+}
+
+.arrow-right {
+    position:absolute; top:-17px; right:0%; /* top = -height/2 */
+    width:25px; height:35px;
+}
+
+.plusimg,
+.minusimg {
+    background-color: #0099FF;
+    opacity: 0.35;
+    z-index:200;
+    width:15px; height:15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.movielink {
+    position:absolute; top:15px; right:15px;
+    z-index: 30;
+}
+
+.hotspot-title {
+    width: 90%;
+}
+
+/* 
+ * This is required or certain browsers do not view the element as visible. We
+ * require hotspot elements to be visible so our highlighting code works. This was put here
+ * so our optional highlight for nested diagrams would work in Chrome. It may be required by
+ * other browsers as well.
+ */
+.hotspot { display:inline; }
+
+.hotspot-data {
+	overflow:auto;
+	background-color:white;
+	color: #000;
+	opacity:0.65;
+    position:absolute; top:30px; right:2px; width:32.5%; bottom:15px;
+	border:4px solid black;
+	margin: 0 0 0 0;
+	padding:0 10px 10px 10px; /* This param sets whitespace around descriptions, but messes up overall height */
+}
+
+.plus {
+	position: absolute; right:25px; top:0px;
+    width:25px; height:25px;
+}
+
+.minus {
+	position: absolute; right:0px; top:0px;
+    width:25px; height:25px;
+}
+
+.plus-wrapper {
+	position: absolute; right:0px; top:0px;
+}
+
+.minus-wrapper {
+	position: absolute; right:0px; top:0px;
+}
+
+.pdflink {
+	position:relative;
+	text-align:center;
+	padding:20% 0 0 0;
+}
+
+.instructions {
+	position:relative;
+	padding:10px 10px 10px 10px;
+	color: #000;
+}
+
+/* General CSS */
+.code_element {
+	font-family: "Courier New", Courier, mono,serif;
+}
+
+a {
+	color:#0000FF;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#09F;
+	text-decoration:underline;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	height: 25px;
+}
+
+
+.titleleft {
+	position: absolute; top:7px; left:25px;
+	font-family: Arial,serif;
+	font-size: 24px;
+    font-weight: bold;
+	color: black;
+}
+.titleright {
+	position: absolute; top:10px; right:20px;
+	float: right;
+}
+.subtitle {
+	font-family: Arial,serif;
+	font-size: 18px;
+	color: red;
+}
+
+.oracleBorder.outer {
+	position: absolute;
+	left: 25px; right: 25px; top: 25px; bottom: 25px;
+	border-radius: 12px;
+	box-shadow: 0 3px 15px 2px rgb(0,0,0);
+}
+.oracleGradient {
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #000000 50%, #960000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#000000), color-stop(100%,#960000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #000000 50%,#960000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #000000 50%,#960000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #000000 50%,#960000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #000000 50%,#960000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#960000',GradientType=0 ); /* IE6-9 */
+}
+.oracleLight {
+	background: -moz-linear-gradient(45deg,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.3) 51%, rgba(255,255,255,0.3) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0)), color-stop(51%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0.3))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.3) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.3) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.3) 100%); /* IE10+ */
+	background: linear-gradient(45deg,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 50%,rgba(255,255,255,0.3) 51%,rgba(255,255,255,0.3) 100%); /* W3C */
+}
+.oracleBorder.inner {
+	position: absolute;
+	left: 5px; right: 5px; top: 5px; bottom: 5px;
+	border-radius: 7px;
+	border: #888 2px solid;
+}
+
+@media only screen and (max-width: 480px) {
+	.oracleBorder.outer {
+		left: 0; right: 0;
+		border-radius: 0;
+	}
+	.oracleBorder.inner {
+		left: 0; right: 0;
+		border-radius: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+}
+.centerinner {
+	position: relative;
+	right: -50%;
+}
+.centerouter {
+	position: relative;
+	float: right;
+	right: 50%;
+}
+
+.copyright {
+    position: absolute; left: 15px;
+    font-family: Arial,serif;
+	font-size: 10px;
+}
